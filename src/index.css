@@ -1,0 +1,109 @@
+body{
+  background: rgba(182, 224, 238, 0.753) url('./images/mac.jpg') no-repeat fixed center;
+  font-family: 'Crimson Text', serif;
+}
+
+/* -------------------- user form -------------------- */
+
+h1 {
+  text-align: center;
+  color: white;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+form.ui.form {
+  z-index: 1;
+  width: 50%;
+  position: fixed;
+  background: white;
+  top: 10%;
+  left: 25%;
+  padding: 2rem;
+  box-shadow: #00000052 2px 2px;
+  border-radius: 10px;
+}
+
+div#srchCmpny {
+  display: flex;
+}
+
+@media only screen and (max-width: 800px) {
+  div#srchCmpny{
+    display: contents;
+  }
+
+  button.ui.button {
+    width: 100%;
+    margin-top: 0.5rem;
+  } 
+}
+
+.errorUI {
+  margin: 0.5rem 0 0 0;
+  font-size: larger;
+  padding: 1rem;
+}
+/* -------------------- error page -------------------- */
+
+.error {
+  z-index: 1;
+  width: 50%;
+  position: fixed;
+  background: white;
+  top: 30%;
+  text-align: center;
+  letter-spacing: 10px;
+  left: 25%;
+  word-spacing: 10px;
+  padding: 2rem;
+  box-shadow: #00000052 2px 2px;
+  border-radius: 10px;
+}
+
+/* -------------------- result page -------------------- */
+
+.result {
+  z-index: 1;
+  width: 80%;
+  margin: 1rem auto;
+  left: 10%;
+  overflow: auto;
+  position: fixed;
+  height: 95%;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: #00000052 2px 2px;
+  border-radius: 10px;
+}
+.resTable {
+  display: grid;
+}
+thead th {
+  font-size: x-large;
+  padding: 0.7rem;
+  border: solid #6953533d 0.001rem;
+  border-radius: 5px;
+  color: #0ed693;
+}
+td{
+  border: solid #6953533d 0.001rem;
+  border-radius: 5px;
+  color: #67696b;
+}
+.result h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+  color: #0ed693;
+}
+
+.resErr{
+  color: #ce0a0a;
+  font-size: x-large;
+  font-family: monospace;
+}
+.sideRes{
+  text-align: end;
+}
